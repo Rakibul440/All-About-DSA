@@ -1,0 +1,41 @@
+# Ignore build directories
+/build/
+/bin/
+/obj/
+/Debug/
+/Release/
+
+# Ignore IDE-specific files
+.vscode/
+/.idea/
+
+# Ignore CMake build files
+CMakeCache.txt
+CMakeFiles/
+CMakeLists.txt.user
+Makefile
+Makefile.user
+
+# Ignore compiled object files and executables
+*.o
+*.a
+*.so
+*.exe
+*.out
+*.app
+
+# Ignore other temporary files
+*.log
+*.tmp
+*.swp
+*.bak
+*.DS_Store
+
+# Ignore Visual Studio files
+.vs/
+.vs2019/
+.vs2022/
+
+# Ignore Xcode files
+xcuserdata/
+DerivedData/
