@@ -7,7 +7,7 @@ struct Node{
     struct Node *next; // self referential pointer;
 };
 
-// creating a pointer which will be pinting the node;
+// creating a pointer which will be pointing the node;
 struct Node *first = NULL; // so now there isn't any node
 
 

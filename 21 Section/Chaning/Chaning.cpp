@@ -1,10 +1,7 @@
 #include <iostream>
 using namespace std;
 
-struct Array{};
+int main(){
 
-int main()
-{
-    
     return 0;
 }
