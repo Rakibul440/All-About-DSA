@@ -44,7 +44,7 @@ int MoveToFront(Array *arr,int key){
     for ( i = 0; i < arr->length; i++)
     {
         if(arr->A[i] == key){
-            swap(arr->A[i],arr->A[0]);
+            swap(&arr->A[i],&arr->A[0]);
             return 0;
         }
     }
