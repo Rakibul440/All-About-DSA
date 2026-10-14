@@ -1,0 +1,81 @@
+IMPORTANT BASIC STACK DSA QUESTIONS FOR INTERVIEWS
+
+1. BASIC STACK PROBLEMS
+
+1. Implement a stack using an array.
+2. Implement a stack using a linked list.
+3. Implement push(), pop(), peek(), and isEmpty().
+4. Reverse a string using a stack.
+5. Check whether parentheses are balanced.
+6. Find the top element of a stack without removing it.
+7. Check whether a stack is empty or full.
+8. Implement two stacks using a single array.
+9. Sort a stack using recursion.
+10. Reverse a stack using recursion.
+
+2. IMPORTANT INTERVIEW PROBLEMS
+
+11. Valid Parentheses — LeetCode 20.
+12. Next Greater Element — LeetCode 496.
+13. Min Stack — LeetCode 155.
+14. Evaluate Reverse Polish Notation — LeetCode 150.
+15. Implement Queue Using Stacks — LeetCode 232.
+16. Implement Stack Using Queues — LeetCode 225.
+17. Remove All Adjacent Duplicates in String — LeetCode 1047.
+18. Baseball Game — LeetCode 682.
+19. Backspace String Compare — LeetCode 844.
+20. Make The String Great — LeetCode 1544.
+
+3. MONOTONIC STACK PROBLEMS
+
+21. Next Greater Element II — LeetCode 503.
+22. Daily Temperatures — LeetCode 739.
+23. Online Stock Span — LeetCode 901.
+24. Largest Rectangle in Histogram — LeetCode 84.
+25. Maximal Rectangle — LeetCode 85.
+26. Trapping Rain Water — LeetCode 42.
+27. Sum of Subarray Minimums — LeetCode 907.
+
+4. STACK AND EXPRESSION PROBLEMS
+
+28. Convert infix expression to postfix.
+29. Convert infix expression to prefix.
+30. Evaluate a postfix expression.
+31. Evaluate a prefix expression.
+32. Check redundant parentheses in an expression.
+33. Find the minimum number of brackets to reverse to balance an expression.
+34. Remove the Outermost Parentheses — LeetCode 1021.
+35. Decode String — LeetCode 394.
+
+5. IMPORTANT STACK CONCEPTS FOR INTERVIEWS
+
+1. What is a stack?
+2. Explain the LIFO principle.
+3. What are the basic operations of a stack?
+4. What is stack overflow?
+5. What is stack underflow?
+6. What is the difference between a stack and a queue?
+7. What is the difference between a stack implemented using an array and a linked list?
+8. What is the time complexity of push(), pop(), and peek()?
+9. What are the real-world applications of stacks?
+10. How does the function call stack work?
+11. What is the difference between stack memory and heap memory?
+12. What is a monotonic stack?
+13. How can you implement a stack that returns the minimum element in O(1)?
+14. How is a stack used in recursion and backtracking?
+15. Why are stacks useful for checking balanced parentheses?
+
+RECOMMENDED PRIORITY FOR PLACEMENT PREPARATION
+
+Solve these 10 problems first, in this order:
+
+1. Implement Stack Using Array — Easy
+2. Reverse a String Using Stack — Easy
+3. Valid Parentheses — Easy
+4. Implement Min Stack — Medium
+5. Implement Queue Using Stacks — Easy
+6. Next Greater Element — Medium
+7. Daily Temperatures — Medium
+8. Evaluate Reverse Polish Notation — Medium
+9. Largest Rectangle in Histogram — Hard
+10. Trapping Rain Water — Hard
