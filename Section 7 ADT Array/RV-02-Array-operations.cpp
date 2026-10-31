@@ -3,6 +3,7 @@
 
 using namespace std;
 
+void Insertion(int *A,int,int &); // insert into a sorted Array
 bool isSorted(vector<int>);
 
 int main(){
@@ -16,7 +17,35 @@ int main(){
         cout << "Not sorted" << endl;
     }
 
+    int B[10] = {2,4,6,8,10,12,14};
+    int length = 7;
+
+    for(int x : B){
+        cout << x << " ";
+    }
+    cout << "\n";
+
+    Insertion(B,-1,length);
+
+    for(int x : B){
+        cout << x << " ";
+    }
+    cout << "\n";
+
     return 0;
+}
+
+void Insertion(int *A,int target,int &length){
+    int i = length - 1;
+
+    while( i >= 0 && A[i] > target){
+        A[i + 1] = A[i]; 
+        i--;
+    }
+
+    A[i+1] = target;
+
+    length++;
 }
 
 bool isSorted(vector<int> A){
