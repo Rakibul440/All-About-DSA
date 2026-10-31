@@ -8,7 +8,9 @@ void ReverseArray_2(vector<int> &);
 void LeftShift(vector<int> &,int);
 
 void LeftShift_optim(vector<int> &,int);
+void LeftShift_optim_2(vector<int> &,int);
 
+void RightShift(vector<int> &,int);
 
 
 int main(){
@@ -37,9 +39,25 @@ int main(){
     cout << "\n";
 
     cout << "\nLEFT SHIFT :=\n";
-    LeftShift_optim(A,11);  // leftshift by 3 
+    LeftShift_optim_2(A,3);  // leftshift by 3 
 
     for(auto x : A){
+        cout << x << " ";
+    }
+    cout << "\n";
+
+    cout << "\nRight SHIFT :=\n";
+
+    vector<int> B = {2,4,6,8,10,12,14};
+    cout << "B : \n";
+    for(auto x : B){
+        cout << x << " ";
+    }
+    cout << "\n";
+
+    RightShift(B,3);
+
+    for(auto x : B){
         cout << x << " ";
     }
     cout << "\n";
@@ -91,4 +109,28 @@ void LeftShift_optim(vector<int> &A,int n){
     for(int i = length - n , j = length - 1; i<j ; i++,j--){
         swap(A[i],A[j]);
     }
+
+}
+
+void LeftShift_optim_2(vector<int> &A,int n){
+    int length = A.size();
+    n %= length;
+
+    reverse(A.begin(), A.begin()+n); // reverse first n  6,4,2 | 12,8,10,100
+    reverse(A.begin()+ n, A.end());  // Reverse left side from n to end  6,4,2 | 100,10,8,12
+    reverse(A.begin(),A.end());  // reverse full 12,8,10,100,2,4,6
+
+}   
+
+
+void RightShift(vector<int> &A,int n){
+    int lenght = A.size();
+    if(lenght == 0) return;
+    
+    n %= lenght;
+
+    // 2,4,6,8|10,12,14
+    reverse(A.begin(), A.end()); // 14,12,10|8,6,4,2
+    reverse(A.begin()+n, A.end()); // 14,12,10|2,4,6,8
+    reverse(A.begin(),A.begin()+n);
 }
