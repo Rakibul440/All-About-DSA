@@ -4,8 +4,8 @@
 using namespace std;
 
 void FindDuplicates(vector<int>); // [3,6,8,8,10,12,15,15,15,20]
-
 void FindDuplicatesAndCount(vector<int>);
+void FindDuplicatesUsing_HashTable(vector<int>);
 
 int main(){
 
@@ -15,6 +15,10 @@ int main(){
 
     cout << "\n";
     FindDuplicatesAndCount(A);
+
+    cout << "\nUsing HashTable : \n";
+
+    FindDuplicatesUsing_HashTable(A);
 
     return 0;
 }
@@ -45,6 +49,27 @@ void FindDuplicates(vector<int> A){
                 cout << A[i] << " ";
                 last_Duplicate=A[i];
             }
+        }
+    }
+}
+
+void FindDuplicatesUsing_HashTable(vector<int> A){
+    int max;
+    for(int i = 0; i < A.size(); i++ ){
+        if(A[i] > max){
+            max = A[i];
+        }
+    }
+
+    vector<int> H(max,0);
+
+    for(int i = 0; i < A.size(); i++){
+        H[A[i]]++;
+    }
+
+    for(int i = 0; i < H.size(); i++){
+        if(H[i] > 1){
+            cout << i << " -> " << H[i] << " time\n";
         }
     }
 }
