@@ -109,7 +109,7 @@ vector<int> Difference(vector<int> A, vector<int> B){
     int i , j ;
     i = j =0;
 
-    while(i< A.size() && B.size()){
+    while(i< A.size() && j< B.size()){
         if(A[i]<B[j]){
             if(C.empty() || C.back() != A[i]){
                 C.push_back(A[i]);
