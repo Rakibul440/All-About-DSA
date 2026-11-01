@@ -5,6 +5,7 @@ using namespace std;
 
 vector<int> Union(vector<int> , vector<int>);  // two sorted Array time complexity o(nlogn) --> for unsorted first sort two array then perform Merge
 vector<int> Intersection(vector<int> , vector<int>); // two sorted Array
+vector<int> Difference(vector<int> , vector<int>); // A-B 
 
 int main(){
 
@@ -23,6 +24,15 @@ int main(){
     vector<int> D = Intersection(A,B);
     cout << "\nIntersection: \n";
     for(auto x : D){
+        cout << x << " ";
+    }
+    cout << "\n";
+
+
+    
+    vector<int> E = Difference(B,A);
+    cout << "\nDifference: \n";
+    for(auto x : E){
         cout << x << " ";
     }
     cout << "\n";
@@ -87,6 +97,35 @@ vector<int> Intersection(vector<int> A , vector<int> B){
             }
             i++;
             j++;
+        }
+    }
+
+    return C;
+}
+
+vector<int> Difference(vector<int> A, vector<int> B){
+    vector<int> C;
+
+    int i , j ;
+    i = j =0;
+
+    while(i< A.size() && B.size()){
+        if(A[i]<B[j]){
+            if(C.empty() || C.back() != A[i]){
+                C.push_back(A[i]);
+            }
+            i++;
+        }else if(A[i] == B[j]){
+            i++;
+            j++;
+        }else if(A[i] > B[j]){
+            j++;
+        }
+    }
+
+    for(;i<A.size();i++){
+        if(C.empty() || C.back() != A[i]){
+            C.push_back(A[i]);
         }
     }
 
