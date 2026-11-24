@@ -8,6 +8,8 @@ int HashFunc(int,int,int);
 int HashTableSize(int);
 void insert(vector<int>&H,int x);
 int search(vector<int> &,int);
+int remove(vector<int> &,int);
+
 
 int main(){
 
@@ -27,7 +29,7 @@ int main(){
     insert(H,62);
 
 
-
+    cout << "\n HASH TABLE \n";
     for(int i = 0; i<H.size();i++){
         cout << i << " : ";
         if(H[i]==0){
@@ -37,13 +39,27 @@ int main(){
         }
     }
 
-    int index = search(H,164);
+    int index = search(H,95);
     if(index == -1){
         cout << "Not Found!\n";
     }else{
         cout << "Found at : " << index << endl;
     }
 
+    int r = remove(H,100);
+    if(r == -1){
+        cout << "Element not found to delete!\n";
+    }
+
+    cout << "\n HASH TABLE \n";
+    for(int i = 0; i<H.size();i++){
+        cout << i << " : ";
+        if(H[i]==0){
+            cout << "EMPTY" << endl;
+        }else{
+            cout << H[i] << endl;
+        }
+    }
 }
 
 int search(vector<int> &H,int key){
@@ -79,6 +95,14 @@ void insert(vector<int>&H,int x){
 
     cout << "Hash Table is Full!" << endl;
     
+}
+
+int remove(vector<int> &H,int key){
+    int index = search(H,key);
+    if(index == -1) return -1;
+    H[index] = -1;
+
+    return index;
 }
 
 // x is key, m hashTable size
