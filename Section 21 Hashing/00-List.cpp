@@ -74,17 +74,59 @@ int List :: pop_front(Node * &h){
     return val;
 }
 
-// pair<Node *,int> List :: search(Node * h,int x){
+std::pair<Node *,int> List :: search(Node * h,int x){
 
     
-//     while(h!=nullptr && h->val != x){
-//         h=h->next;
-//     }
+    while(h!=nullptr && h->val != x){
+        h=h->next;
+    }
     
-//     if(h==nullptr)return {h,-1};
+    if(h==nullptr)return {nullptr,-1};
     
-//     return {h,h->val}; 
-// }
+    return {h,h->val}; 
+}
+
+int List :: pop(Node * &h, int x){ // pop particular value node
+    
+    if(h==nullptr) return -1;
+
+    //if one Node;
+    int val;
+    Node * t = h, * temp;
+
+    if(t->next == nullptr && t->val == x){
+        temp = t;
+        val = temp->val;
+        h = nullptr;
+        delete(temp);
+
+        return val;
+    }
+
+    // all node;
+    Node * q = nullptr;
+    while(t->next != nullptr && t->val != x){
+        q = t;
+        t=t->next;
+    }
+    if(q==nullptr){
+        temp = t;
+        val = temp->val;
+        h = h->next;
+        delete(temp);
+        return val;
+    }
+    // not found
+    if(t->val != x) return -1;
+
+    temp = t;
+    q->next = t->next;
+    val = temp->val;
+    delete(temp);
+
+    return val;
+} 
+
 
 void List :: Display(Node * t){
     while(t!=nullptr){
