@@ -86,47 +86,36 @@ std::pair<Node *,int> List :: search(Node * h,int x){
     return {h,h->val}; 
 }
 
-int List :: pop(Node * &h, int x){ // pop particular value node
-    
-    if(h==nullptr) return -1;
+int List::pop(Node *&h, int x){
 
-    //if one Node;
-    int val;
-    Node * t = h, * temp;
+    if(h == nullptr) return -1;
 
-    if(t->next == nullptr && t->val == x){
-        temp = t;
-        val = temp->val;
-        h = nullptr;
-        delete(temp);
+    Node *curr = h;
+    Node *prev = nullptr;
 
-        return val;
+    // Search for the node
+    while(curr != nullptr && curr->val != x){
+        prev = curr;
+        curr = curr->next;
     }
 
-    // all node;
-    Node * q = nullptr;
-    while(t->next != nullptr && t->val != x){
-        q = t;
-        t=t->next;
-    }
-    if(q==nullptr){
-        temp = t;
-        val = temp->val;
-        h = h->next;
-        delete(temp);
-        return val;
-    }
-    // not found
-    if(t->val != x) return -1;
+    // Not found
+    if(curr == nullptr) return -1;
 
-    temp = t;
-    q->next = t->next;
-    val = temp->val;
-    delete(temp);
+    // If first node
+    if(prev == nullptr){
+        h = curr->next;
+    }
+    else{
+        prev->next = curr->next;
+    }
+
+    int val = curr->val;
+
+    delete curr;
 
     return val;
-} 
-
+}
 
 void List :: Display(Node * t){
     while(t!=nullptr){
