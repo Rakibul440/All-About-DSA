@@ -1,5 +1,5 @@
 #include <iostream>
-#include "list.h"
+#include "includes/list.h"
 
 using namespace std;
 
@@ -74,14 +74,22 @@ int List :: pop_front(Node * &h){
     return val;
 }
 
-pair<Node *,int> List :: search(Node * h,int x){
+// pair<Node *,int> List :: search(Node * h,int x){
 
     
-    while(h!=nullptr && h->val != x){
-        h=h->next;
+//     while(h!=nullptr && h->val != x){
+//         h=h->next;
+//     }
+    
+//     if(h==nullptr)return {h,-1};
+    
+//     return {h,h->val}; 
+// }
+
+void List :: Display(Node * t){
+    while(t!=nullptr){
+        cout << t->val << "->";
+        t = t->next;
     }
-    
-    if(h==nullptr)return {h,-1};
-    
-    return {h,h->val}; 
+    cout << "NULL\n";
 }
