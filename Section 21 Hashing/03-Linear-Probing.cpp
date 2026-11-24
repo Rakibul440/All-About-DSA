@@ -7,6 +7,7 @@ using namespace std;
 int HashFunc(int,int,int);
 int HashTableSize(int);
 void insert(vector<int>&H,int x);
+int search(vector<int> &,int);
 
 int main(){
 
@@ -36,17 +37,48 @@ int main(){
         }
     }
 
+    int index = search(H,164);
+    if(index == -1){
+        cout << "Not Found!\n";
+    }else{
+        cout << "Found at : " << index << endl;
+    }
+
+}
+
+int search(vector<int> &H,int key){
+    int i = 0;
+    int m = H.size();
+
+    while(i<m){
+        int index = HashFunc(key,i,m);
+        if(H[index] == 0){
+            return -1;
+        }else if(H[index] ==  key){
+            return index;
+        }
+        i++;
+    }
+
+    return -1;
 }
 
 void insert(vector<int>&H,int x){
     int i = 0;
-    int index = HashFunc(x,i,H.size());
-    while (H[index]!=0)
+    int m = H.size();
+
+    while (i<m)
     {
+        int index = HashFunc(x,i,m);
+        if(H[index] == 0){
+            H[index] = x;
+            return;
+        }
         i++;
-        index = HashFunc(x,i,H.size());
     }
-    H[index] = x;
+
+    cout << "Hash Table is Full!" << endl;
+    
 }
 
 // x is key, m hashTable size
