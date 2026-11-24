@@ -25,7 +25,7 @@ class List{
         static int pop(Node * &, int); // pop particular value node
         static int pop_back(Node * &);
         static int pop_front(Node * &);
-        // static pair<Node *,int> search(Node *,int);
+        static std::pair<Node *,int> search(Node *,int);
         static void Display(Node *);
 };
 
