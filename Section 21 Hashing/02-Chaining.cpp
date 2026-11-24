@@ -27,7 +27,26 @@ int main(){
         cout << i << " : ";
         List :: Display(H[i]);
     }
+
+    // search 10
+    pair<Node*,int> result = List :: search(H[func(12,10)],12);
     
+    if(result.first){
+        cout << "Present at address : " << result.first << endl;
+    }else{
+        cout << "Not Present!"<< endl;
+    }
+
+    // delete 9
+
+    List :: pop(H[func(12,10)],12);
+
+    for(int i = 0;i<H.size();i++){
+        cout << i << " : ";
+        List :: Display(H[i]);
+    }
+
+
     return 0;
 }
 
