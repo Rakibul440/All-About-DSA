@@ -1,0 +1,83 @@
+# 1. Basic String DSA Problems
+
+1. Write a program to reverse a string.
+2. Write a program to check whether a string is a palindrome.
+3. Write a program to count vowels and consonants in a string.
+4. Write a program to count the number of characters in a string without using the built-in length function.
+5. Write a program to convert lowercase letters to uppercase without using built-in functions.
+6. Write a program to count the number of words in a sentence.
+7. Write a program to count the frequency of a given character in a string.
+8. Write a program to remove all spaces from a string.
+9. Write a program to remove all vowels from a string.
+10. Write a program to replace every space in a string with a hyphen.
+11. Write a program to find the first and last occurrence of a character in a string.
+12. Write a program to check whether a string contains only digits.
+13. Write a program to remove duplicate characters from a string.
+14. Write a program to find all duplicate characters in a string.
+15. Write a program to find the first non-repeating character in a string.
+16. Write a program to find the first repeating character in a string.
+17. Write a program to check whether two strings are equal without using built-in comparison functions.
+18. Write a program to check whether two strings are anagrams.
+19. Write a program to reverse the order of words in a sentence.
+20. Write a program to capitalize the first letter of every word in a sentence.
+
+# 2. Intermediate String DSA Problems
+
+1. Write a program to find the longest word in a sentence.
+2. Write a program to find the most frequently occurring character in a string.
+3. Write a program to remove duplicate characters while preserving their original order.
+4. Write a program to check whether one string is a rotation of another.
+5. Write a program to find the longest common prefix among an array of strings.
+6. Write a program to find all occurrences of a substring in a given string.
+7. Write a program to find the longest substring without repeating characters.
+8. Write a program to find the longest palindromic substring.
+9. Write a program to group anagrams from an array of strings.
+10. Write a program to compress a string by replacing consecutive repeated characters with their frequencies.
+11. Write a program to check whether two strings are isomorphic.
+12. Write a program to check whether a string can become a palindrome by removing at most one character.
+13. Write a program to find the minimum number of characters that must be added to the beginning of a string to make it a palindrome.
+14. Write a program to find the longest common substring between two strings.
+15. Write a program to find the character with the second-highest frequency in a string.
+16. Write a program to find the smallest window in a string containing all characters of another string.
+17. Write a program to implement string-to-integer conversion without using built-in conversion functions.
+18. Write a program to rearrange a string so that no two adjacent characters are the same.
+19. Write a program to find the longest repeating character replacement substring after replacing at most k characters.
+20. Write a program to check whether two strings follow the same word pattern.
+21. Write a program to find the longest substring containing exactly k distinct characters.
+22. Write a program to find all anagram starting indices of a pattern in a string.
+23. Write a program to compare two strings containing backspace characters and determine whether they are equal.
+24. Write a program to decode an encoded string such as 3[a2[c]] into accaccacc.
+25. Write a program to find the minimum number of deletions required to make two strings equal.
+
+# 3. Advanced String DSA Problems
+
+1. Implement the Knuth-Morris-Pratt (KMP) algorithm to find all occurrences of a pattern in a string.
+2. Implement the Rabin-Karp algorithm for pattern matching.
+3. Implement the Z-algorithm to find all occurrences of a pattern in a string.
+4. Find the longest palindromic substring using Manacher's algorithm.
+5. Find the longest common subsequence of two strings using dynamic programming.
+6. Find the edit distance between two strings.
+7. Find the shortest common supersequence of two strings.
+8. Find the longest palindromic subsequence in a string.
+9. Count the number of distinct subsequences of a string that are equal to a given target string.
+10. Find the minimum number of cuts required to partition a string into palindromic substrings.
+11. Find the longest duplicate substring in a given string.
+12. Count all distinct substrings of a string efficiently.
+13. Find the lexicographically smallest rotation of a string.
+14. Find the minimum number of insertions required to make a string a palindrome.
+15. Implement wildcard pattern matching using dynamic programming.
+16. Implement regular expression matching supporting . and *.
+17. Solve the word-break problem using dynamic programming.
+18. Find the minimum window subsequence of a string that contains another string as a subsequence.
+19. Find the longest common substring among multiple strings.
+20. Implement the Aho-Corasick algorithm for matching multiple patterns simultaneously.
+21. Construct a suffix array for a given string and use it to find repeated substrings.
+22. Construct a suffix automaton and count the number of distinct substrings.
+23. Find the longest substring that appears at least twice without overlapping.
+24. Find the minimum number of operations required to convert one string into another using insertions, deletions, and substitutions.
+25. Find the number of ways to split a string into valid dictionary words.
+26. Find the longest substring that contains at most k distinct characters.
+27. Find the number of distinct palindromic substrings in a string.
+28. Find the longest substring that occurs in one string but not in another.
+29. Find the minimum number of character replacements required to make two strings anagrams.
+30. Find the lexicographically smallest string obtainable by rearranging characters under given constraints.

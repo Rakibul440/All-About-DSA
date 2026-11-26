@@ -1,0 +1,101 @@
+IMPORTANT STRING DSA QUESTIONS FOR INTERVIEWS
+
+1. BASIC STRING PROBLEMS
+
+1. Find the length of a string without using a built-in length function.
+2. Reverse a string.
+3. Check whether a string is a palindrome.
+4. Count vowels and consonants in a string.
+5. Count uppercase letters, lowercase letters, digits, and special characters.
+6. Convert lowercase letters to uppercase and uppercase letters to lowercase.
+7. Count the frequency of each character in a string.
+8. Find the first and last occurrence of a character.
+9. Remove spaces from a string.
+10. Remove all occurrences of a given character.
+11. Copy one string into another without using a built-in copy function.
+12. Compare two strings without using a built-in comparison function.
+13. Concatenate two strings without using a built-in concatenation function.
+14. Check whether two strings are equal.
+15. Find the largest and smallest character in a string.
+
+2. IMPORTANT STRING INTERVIEW PROBLEMS
+
+16. Valid Anagram — LeetCode 242.  (DONE)
+17. Valid Palindrome — LeetCode 125. (DONE)
+18. Reverse String — LeetCode 344.  (DONE)
+19. Reverse Words in a String — LeetCode 151.
+20. Find the Index of the First Occurrence in a String — LeetCode 28.
+21. Longest Common Prefix — LeetCode 14.
+22. Is Subsequence — LeetCode 392.
+23. Ransom Note — LeetCode 383.
+24. First Unique Character in a String — LeetCode 387.
+25. Roman to Integer — LeetCode 13.
+26. String to Integer (atoi) — LeetCode 8.
+27. Length of Last Word — LeetCode 58.
+28. Add Strings — LeetCode 415.
+29. Determine if Two Strings Are Close — LeetCode 1657.
+30. Group Anagrams — LeetCode 49.
+
+3. TWO-POINTER AND SLIDING-WINDOW PROBLEMS
+
+31. Valid Palindrome II — LeetCode 680.
+32. Longest Substring Without Repeating Characters — LeetCode 3.
+33. Permutation in String — LeetCode 567.
+34. Find All Anagrams in a String — LeetCode 438.
+35. Longest Repeating Character Replacement — LeetCode 424.
+36. Minimum Window Substring — LeetCode 76.
+37. Container-style two-pointer techniques applied to string problems.
+38. Compare strings with backspaces — LeetCode 844.
+39. Reverse only the letters in a string.
+40. Move all spaces or selected characters according to a given rule.
+
+4. STRING MATCHING AND ADVANCED PROBLEMS
+
+41. Implement substring search using a brute-force algorithm.
+42. Implement the KMP pattern-matching algorithm.
+43. Implement the Rabin-Karp string-matching algorithm.
+44. Find the longest palindromic substring — LeetCode 5.
+45. Count palindromic substrings — LeetCode 647.
+46. Longest Palindromic Subsequence — LeetCode 516.
+47. Decode String — LeetCode 394.
+48. Multiply Strings — LeetCode 43.
+49. Repeated String Match — LeetCode 686.
+50. Find the shortest string that contains two given strings as substrings.
+
+5. IMPORTANT STRING CONCEPTS FOR INTERVIEWS
+
+1. What is a string?
+2. How are strings represented in C and C++?
+3. What is the null character ('\0') in C?
+4. What is the difference between a character array and a string?
+5. What is the difference between a C-style string and std::string?
+6. What is the difference between string length and string capacity in C++?
+7. Why should string comparisons use the correct comparison method?
+8. What is an anagram?
+9. What is a palindrome?
+10. What is a substring?
+11. What is a subsequence?
+12. What is the difference between a substring and a subsequence?
+13. What is string immutability?
+14. What are ASCII and Unicode?
+15. What is the time complexity of common string operations?
+16. What is pattern matching?
+17. How does the KMP algorithm work?
+18. What is the sliding-window technique?
+19. When should you use a frequency array versus a hash map?
+20. How can you avoid unnecessary extra space when processing strings?
+
+RECOMMENDED PRIORITY FOR PLACEMENT PREPARATION
+
+Solve these 10 problems first, in this order:
+
+1. Reverse a String — Easy
+2. Check Palindrome — Easy
+3. Count Character Frequencies — Easy
+4. Valid Anagram — Easy
+5. Valid Palindrome — Easy
+6. Longest Common Prefix — Easy
+7. Reverse Words in a String — Medium
+8. Longest Substring Without Repeating Characters — Medium
+9. Group Anagrams — Medium
+10. Longest Palindromic Substring — Medium
